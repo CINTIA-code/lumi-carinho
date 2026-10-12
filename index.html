@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171020">
+  <meta name="description" content="Lumi Carinho: um pequeno universo de afeto.">
+  <title>Lumi Carinho 💜</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">SEU UNIVERSO DIGITAL</span>
+        <h1>✦ Lumi</h1>
+        <p class="subtitle">Um pouquinho de carinho todos os dias.</p>
+      </div>
+      <div class="level" id="level">NÍVEL 1</div>
+    </header>
+
+    <section class="pet-card" aria-label="Sua Lumi">
+      <div class="stars">✦　·　✧　·　✦</div>
+      <p class="mood" id="mood">✨ Feliz</p>
+
+      <div class="pet" id="pet" aria-label="Lumi, seu bichinho virtual">
+        <span class="antenna antenna-left"></span>
+        <span class="antenna antenna-right"></span>
+        <span class="ear ear-left"></span>
+        <span class="ear ear-right"></span>
+        <span class="eye eye-left"></span>
+        <span class="eye eye-right"></span>
+        <span class="mouth"></span>
+        <span class="foot foot-left"></span>
+        <span class="foot foot-right"></span>
+      </div>
+
+      <h2>Lumi</h2>
+      <p id="petMessage" class="pet-message">Estou feliz por estar aqui!</p>
+      <p class="small-note">Cuide de mim e vamos crescer juntes. ✨</p>
+    </section>
+
+    <section class="stats-card">
+      <h2>Como estou?</h2>
+
+      <div class="stat">
+        <div class="stat-label">
+          <span>🍓 Fome</span>
+          <strong id="hungerValue">80%</strong>
+        </div>
+        <div class="bar"><div id="hungerBar" class="fill"></div></div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-label">
+          <span>💗 Felicidade</span>
+          <strong id="happyValue">80%</strong>
+        </div>
+        <div class="bar"><div id="happyBar" class="fill pink"></div></div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-label">
+          <span>⚡ Energia</span>
+          <strong id="energyValue">80%</strong>
+        </div>
+        <div class="bar"><div id="energyBar" class="fill blue"></div></div>
+      </div>
+    </section>
+
+    <section class="actions-card">
+      <h2>Vamos fazer algo?</h2>
+      <div class="actions">
+        <button type="button" id="feedButton">🍓 Alimentar</button>
+        <button type="button" id="playButton">🎮 Brincar</button>
+        <button type="button" id="sleepButton">🌙 Dormir</button>
+        <button type="button" id="talkButton">💬 Conversar</button>
+      </div>
+    </section>
+
+    <section class="chat-card">
+      <div class="section-heading">
+        <div>
+          <h2>Converse com a Lumi</h2>
+          <p>Conte como foi seu dia. 💜</p>
+        </div>
+        <span class="online"><span></span> Aqui com você</span>
+      </div>
+
+      <div
+        id="chatHistory"
+        class="chat-history"
+        role="log"
+        aria-live="polite"
+        aria-label="Conversa com a Lumi"
+      ></div>
+
+      <form id="chatForm" class="chat-form">
+        <label class="sr-only" for="chatInput">Sua mensagem</label>
+        <input
+          id="chatInput"
+          type="text"
+          maxlength="300"
+          placeholder="Escreva para a Lumi..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit" aria-label="Enviar mensagem">➤</button>
+      </form>
+
+      <div class="chat-footer">
+        <span id="chatStatus">Nossa conversa fica salva neste navegador.</span>
+        <button type="button" id="clearChat" class="text-button">
+          Limpar conversa
+        </button>
+      </div>
+    </section>
+
+    <section class="love-card">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">UM CARINHO PARA VOCÊ</span>
+          <h2>Correio de carinho 💌</h2>
+          <p>Mensagens preparadas para aquecer o coração.</p>
+        </div>
+      </div>
+
+      <div class="message-preview" aria-live="polite">
+        <span class="envelope">💌</span>
+        <p id="loveMessage">Você é muito amado. Nunca se esqueça disso! 💜</p>
+      </div>
+
+      <div class="love-buttons">
+        <button type="button" id="newLoveButton" class="primary-button">
+          Receber carinho
+        </button>
+        <button type="button" id="previewButton" class="secondary-button">
+          Ver prévia
+        </button>
+      </div>
+
+      <p class="small-note">
+        Esta versão mostra mensagens de demonstração no app.
+        O envio pela família e as notificações no relógio serão
+        conectados na próxima etapa.
+      </p>
+    </section>
+
+    <footer>
+      <p>Feito com 💜 para você e a Lumi.</p>
+      <p id="saveStatus">Progresso salvo neste navegador.</p>
+    </footer>
+  </main>
+</body>
+</html>

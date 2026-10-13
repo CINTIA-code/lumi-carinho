@@ -1,5 +1,12 @@
 "use strict";
-
+const firebaseConfig = {
+  apiKey: "AIzaSyDy1pAEB8xryGAsPNzKR-e4aUky3U6iNdM",
+  authDomain: "lumi-carinho-web.firebaseapp.com",
+  projectId: "lumi-carinho-web",
+  storageBucket: "lumi-carinho-web.firebasestorage.app",
+  messagingSenderId: "677714164643",
+  appId: "1:677714164643:web:4fd0b7ec1de367edfeb816"
+};
 // Chaves de armazenamento
 const STORAGE_KEY = "lumi-tamagotchi-v1";
 const CHAT_KEY = "lumi-chat-history-v1";
